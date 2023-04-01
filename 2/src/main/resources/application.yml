@@ -1,0 +1,14 @@
+spring:
+    datasource:
+        url: jdbc:postgresql://host.docker.internal:49153/second
+        username: postgres
+        password: postgrespw
+    jpa:
+        hibernate:
+            ddl-auto: create-drop
+        show-sql: true
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                format_sql: true
+
